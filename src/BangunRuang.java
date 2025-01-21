@@ -1,4 +1,4 @@
-public class BangunRuang {
+class BangunRuang {
     private int panjang;
     private int lebar;
     private int tinggi;
@@ -12,22 +12,4 @@ public class BangunRuang {
     public void setTinggi(int tinggi) { this.tinggi = tinggi; }
     public int getDiameter() { return diameter; }
     public void setDiameter(int diameter) { this.diameter = diameter; }
-
-    public int luasBalok() {
-        return 2 * ((panjang * lebar) + (panjang * tinggi) + (lebar * tinggi));
-    }
-
-    public int volumeBalok() {
-        return panjang * lebar * tinggi;
-    }
-
-    public float luasBola() {
-        final float phi = 22.0f / 7.0f;
-        return phi * diameter * diameter;
-    }
-
-    public float volumeBola() {
-        final float phi = 22.0f / 7.0f;
-        return (phi * diameter * diameter * diameter) / 6.0f;
-    }
 }
